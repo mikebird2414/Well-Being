@@ -16,3 +16,13 @@ body {
 .custom-header-font {
     color: white;
 }
+
+.custom-feeling {
+    border: white;
+    border-style: solid;
+    background-color: rgb(177, 174, 211);
+
+}
+.custom-con {
+    margin: 0px;
+}
