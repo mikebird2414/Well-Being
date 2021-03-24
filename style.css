@@ -1,0 +1,18 @@
+body {
+    background-image: url(https://i.pinimg.com/originals/c3/57/98/c3579807fc1a9fba998f836a1cb51499.jpg);
+    background-size: cover;
+    
+}
+
+.custom-header {
+    background-image: url("./cover-image.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+   
+
+}
+
+.custom-header-font {
+    color: white;
+}
