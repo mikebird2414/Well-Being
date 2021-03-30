@@ -10,3 +10,12 @@ $(document).ready(function(){
         console.log("thanks");
     })
 })
+
+var quotesUrl = "https://type.fit/api/quotes";
+fetch(quotesUrl)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
