@@ -1,0 +1,41 @@
+body {
+    background-image: url("./images/water-1.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mot-quote {
+    margin-bottom: 40px;
+    color:rgb(243, 203, 92);
+    font-family: 'Charm', sans-serif;
+    opacity: 100%;
+}
+
+.quote-container {
+    background-color:rgb(65,53,53);
+    opacity: 75%;  
+}
+
+.padding {
+    padding-bottom: 20px;
+}
+
+.yoga-container {
+    padding: 20px;
+
+}
+
+.yoga-pose {
+    border-style: solid;
+    border-color: rgb(243, 203, 92);
+    width:60%;
+    border-radius: 80px;
+}
+
+.custom-btn {
+
+}
+
+.play-button {
+    width:30%;
+}
