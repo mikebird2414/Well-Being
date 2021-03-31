@@ -8,6 +8,7 @@ $(document).ready(function () {
   $(".emojiButton").click(function () {
     var date = $(this).parent().attr("id");
     var emotion = $(this).siblings(".desc").html();
+    window.location.href='./main-page/mainpage.html';
 
     date = dateTime;
 
