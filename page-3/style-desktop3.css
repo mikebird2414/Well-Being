@@ -33,11 +33,11 @@ body {
     border-radius: 80px;
 }
 
-.custom-btn {
+.custombtn {
 
 }
 
-.custom-btn:hover {
+.custombtn:hover {
     box-shadow: 1px 1px 40px 20px rgb(255, 255, 255);
 
 }

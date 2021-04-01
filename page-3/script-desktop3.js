@@ -6,6 +6,7 @@ var playBtn = document.querySelector("#play");
 var playBtn2 = document.querySelector("#pause");
 var player = document.querySelector("#player");
 
+
 var quotesUrl = "https://type.fit/api/quotes";
 fetch(quotesUrl)
   .then(function(response) {
@@ -22,12 +23,6 @@ fetch(quotesUrl)
   
 
   });
-
-  testBtn.addEventListener("click", testFunction)
-
-  function testFunction() {
-    console.log("i was clicked");
-  }
 
   // type="text/javascript">
   //       window.onload = function () {
