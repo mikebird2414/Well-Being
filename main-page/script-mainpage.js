@@ -2,6 +2,7 @@ document.getElementById("message").innerHTML = localStorage.getItem("today");
 
 var messageInput = document.querySelector("#message");
 var saveBtn = document.querySelector("#saveBtn");
+var quote = document.querySelector("#quote")
 
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
@@ -20,6 +21,22 @@ localStorage.setItem(today, dailyDiary);
 }
 
 
+var quotesUrl = "https://type.fit/api/quotes";
+fetch(quotesUrl)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+
+    var randomQuote = data[Math.floor(Math.random()*data.length)];
+    console.log(randomQuote);
+
+    quote.innerHTML = randomQuote.text;
+
+  
+
+  });
 
 
 

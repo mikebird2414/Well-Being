@@ -66,6 +66,7 @@ body {
 .timer {
     font-size: 80px;
     color: rgb(83, 83, 114);
+    margin-left: 105px;
 }
 
 .modal-h1 {
