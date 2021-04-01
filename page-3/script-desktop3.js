@@ -2,8 +2,8 @@ console.log("script is linked");
 
 var testBtn = document.querySelector("#yoga3");
 var quote = document.querySelector("#quote")
-var playBtn = document.querySelector("#playpause");
-var playBtn2 = document.querySelector("#playpausetwo");
+var playBtn = document.querySelector("#play");
+var playBtn2 = document.querySelector("#pause");
 var player = document.querySelector("#player");
 
 var quotesUrl = "https://type.fit/api/quotes";
@@ -160,7 +160,7 @@ fetch(quotesUrl)
       player = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: 'EbnH3VHzhu8',
+        videoId: 'EpAyaAyWl-M',
         events: {
           'onReady': onPlayerReady,
           'onStateChange': onPlayerStateChange
