@@ -48,8 +48,13 @@ body {
         width: 70%;
         height: 100%;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        background-color: rgb(177, 174, 211);
+       
     }
+  .checkin {
+    background-color: rgb(177, 174, 211);
+  }
+
+ 
     
     /*Button*/
     .clear {

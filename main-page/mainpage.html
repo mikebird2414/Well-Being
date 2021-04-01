@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./mpstyle.css">
+    <!-- Top Navigation Menu -->
     <title>quote</title>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- Top Navigation Menu -->
+    
     <div class="topnav">
         <a href="#home" class="active">My Mental</a>
         <!-- Navigation links (hidden by default) -->
@@ -39,12 +39,11 @@
         <section class="checkins">
             <div class="checkin">
                 <img src="" alt="" class="" />
-                <h2>Weekly Emotions Check in</h2>
-                <p>
-
-                </p>
+                <h2>Weekly Emotions Check in</h2>                                 
             </div>
-        </section>
+            <div id="chartContainer" class="chartContainer"  style="height: 300px; width: 100%;"></div>
+            </section>
+  
     </main>
     <aside class="feelings">
         <div class="feeling">
@@ -61,7 +60,11 @@
 
         </div>
     </aside>
-
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="./script-mainpage.js"></script>
+    
 </body>
 
 </html>
