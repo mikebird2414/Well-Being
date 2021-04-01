@@ -1,70 +1,80 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title></title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./mpstyle.css">
-    <title>quote</title>
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Mental</title>
+
+    <link rel="stylesheet" href="/main-page/mpstyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <!-- Top Navigation Menu -->
-    <div class="topnav">
-        <a href="#home" class="active">My Mental</a>
-        <!-- Navigation links (hidden by default) -->
-        <div id="myLinks">
-            <a href="">Home</a>
-            <a href="">Sound</a>
-            <a href="">Well Being</a>
-        </div>
-        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
-    </div>
 </head>
 
 <body>
-    <header>
-        <h1 class="quote">
-            If you want to fly, give up everything that weighs you down.
-        </h1>
-    </header>
-    <main>
-        <section class="checkins">
-            <div class="checkin">
-                <img src="" alt="" class="" />
-                <h2>Weekly Emotions Check in</h2>
-                <p>
-
-                </p>
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/index1.html">My Mental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="mainpage.html">Home</a>
+                    <a class="nav-link" href="/page-3/index-desktop3.html">Yoga Poses</a>
+                </div>
             </div>
-        </section>
-    </main>
-    <aside class="feelings">
-        <div class="feeling">
-            <h3>Today I am Feeling</h3>
-            <img src="" alt="" />
-            <p>
-                Today i am feeling very well balnaced and rested. For today my focus is to continue to relax, clear my
-                mind, and continue the ever lasting flow of positive chackra.
-            </p>
-            <textarea rows="8" cols="50" placeholder="Tell Us How You're Feeling Today..."></textarea>
-            <br>
-            <button type="button" class="clear" onclick="">Clear</button>
-            <button type="button" class="save" onclick="">Save</button>
-
         </div>
-    </aside>
+    </nav>
 
+    <h1 class="quote">
+        If you want to fly, give up everything that weighs you down.
+    </h1>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div id="chartContainer" class="chartContainer" style="height: 400px; width: 100%;"></div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-sm">
+                <div class="feelings">
+                    <h3>Today I am Feeling</h3>
+                    <img src="" alt="" />
+                    <p>
+                        Today i am feeling very well balnaced and rested. For today my focus is to continue to relax,
+                        clear my
+                        mind, and continue the ever lasting flow of positive chackra.
+                    </p>
+                    <textarea id="message" class="message" rows="8" cols="50"
+                        placeholder="Tell Us How You're Feeling Today..."></textarea>
+                    <br>
+                    <button type="button" class="clear" onclick="">Clear</button>
+                    <button id="saveBtn" type="button" class="save" onclick="">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer> Made with love My Mental 2021</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+    <script src="https://canvasjs.com/assets/script/jquery.canvasjs.min.js"></script>
+    <script src="./script-mainpage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
 </body>
-
-<script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-<script src="./script-mainpage.js"></script>
 
 </html>

@@ -6,16 +6,17 @@ body {
 
 
 
-.quote-container {
-    opacity: 75%;  
+.quote-container { 
     width: 100%;
     margin: 20px;
 }
 .mot-quote {
+    font-size: 50px;
     margin-bottom: 40px;
-    color:rgb(243, 203, 92);
+    color:rgb(255, 207, 75);
     font-family: 'Bad Script', cursive;
     opacity: 100%;
+    text-shadow: 2px 2px 0px rgb(124, 124, 185);
 }
 .padding {
     padding-bottom: 20px;
@@ -33,15 +34,46 @@ body {
     border-radius: 80px;
 }
 
-.custom-btn {
+.custombtn {
 
 }
 
-.custom-btn:hover {
+.custombtn:hover {
     box-shadow: 1px 1px 40px 20px rgb(255, 255, 255);
 
 }
 
 .play-button {
-    width:10%
+    width:150px;
+}
+.music {
+    width: 100px;
+}
+
+.music-con {
+    
+}
+
+.navbar-brand
+{
+  font-size: 35px;
+}
+.navbar-nav
+{
+  font-size: 20px;
+}
+
+.timer {
+    font-size: 80px;
+    color: rgb(83, 83, 114);
+}
+
+.modal-h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(83, 83, 114);
+    margin: 30px;
+}
+
+.custom-modal {
+    background-color: rgb(243, 203, 92);;
 }
