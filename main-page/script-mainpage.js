@@ -1,5 +1,3 @@
-
-
 window.onload = function () {
     var dataPoints = [];
     var options = {
