@@ -44,7 +44,14 @@ body {
 }
 
 .play-button {
-    width:10%
+    width:150px;
+}
+.music {
+    width: 100px;
+}
+
+.music-con {
+    
 }
 
 .navbar-brand
