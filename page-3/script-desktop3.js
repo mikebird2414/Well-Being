@@ -1,10 +1,32 @@
 console.log("script is linked");
 
-var testBtn = document.querySelector("#yoga3");
+
+var yoga1 = document.querySelector("#yoga1")
+var yoga2 = document.querySelector("#yoga2");
+var yoga3 = document.querySelector("#yoga3");
+var yoga4 = document.querySelector("#yoga4");
+var yoga5 = document.querySelector("#yoga5");
+var yoga6 = document.querySelector("#yoga6");
+
+
+
+
+
 var quote = document.querySelector("#quote")
 var playBtn = document.querySelector("#play");
 var playBtn2 = document.querySelector("#pause");
 var player = document.querySelector("#player");
+
+yoga1.addEventListener("click", clicked);
+yoga2.addEventListener("click", clicked);
+yoga3.addEventListener("click", clicked);
+yoga4.addEventListener("click", clicked);
+yoga5.addEventListener("click", clicked);
+yoga6.addEventListener("click", clicked);
+
+function clicked() {
+  console.log("i was clicked");
+}
 
 
 var quotesUrl = "https://type.fit/api/quotes";
@@ -188,4 +210,8 @@ fetch(quotesUrl)
     }
 
     player.setAttribute("style","display:none");
+
+    $('#myModal').on('shown.bs.modal', function () {
+      $('#myInput').trigger('focus')
+    })
 
