@@ -13,9 +13,9 @@ today = mm + '/' + dd;
 
 console.log(today);
 
-saveBtn.addEventListener("click", setDiaryStorage);
+saveBtn.addEventListener("click", setDailyStorage);
 
-function setDiaryStorage() {
+function setDailyStorage() {
     var dailyDiary = messageInput.value;
 localStorage.setItem(today, dailyDiary);
 }
