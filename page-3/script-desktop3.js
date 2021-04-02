@@ -291,6 +291,10 @@ fetch(quotesUrl)
 // ];
 
     // 2. This code loads the IFrame Player API code asynchronously.
+    
+    var musicIDs = ['EpAyaAyWl-M','79kpoGF8KWU','77YwsoKsNV8','GA9GigGuf24','wuLKvcn-c7A','neV3EPgvZ3g', 'WhgKyIxjHNo'];
+    var videoIDs = musicIDs[Math.floor(Math.random()*musicIDs.length)];
+    console.log(videoIDs);
     var tag = document.createElement('script');
 
     tag.src = "https://www.youtube.com/iframe_api";
@@ -304,10 +308,9 @@ fetch(quotesUrl)
       player = new YT.Player('player', {
         height: '390',
         width: '640',
-        videoId: 'EpAyaAyWl-M',
+        videoId: videoIDs,
         events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
+          'onReady': onPlayerReady
         }
       });
     }
