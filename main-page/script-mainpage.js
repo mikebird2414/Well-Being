@@ -23,7 +23,7 @@ window.onload = function () {
     function addData() {
         for (var i = 0; i < info.length; i++) {
             dataPoints.push({
-                x: new Date(info[i].date),
+                x: info[i].date,
                 y: info[i].units
             });
         }
@@ -31,8 +31,8 @@ window.onload = function () {
     }
     $.getJSON("https://canvasjs.com/data/gallery/jquery/daily-sales-data.json", addData);
 }
-var tomorrow = 1617155500000 + 86400;
-var nextday = 1617155500002 + 172800;
+var a = 1617155500000 + 86400;
+var b = 1617155500002 + 172800;
 var info = [
     {
         "date": 1617155500000,
@@ -52,6 +52,6 @@ var info = [
     },
     {
         "date": 1617155500004,
-        "units": 4
+        "units": 5
     },
 ]
