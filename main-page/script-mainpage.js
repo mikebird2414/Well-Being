@@ -38,68 +38,6 @@ fetch(quotesUrl)
 
   });
 
-
-
-
-
-
-// window.onload = function () {
-//     var dataPoints = [];
-//     var options = {
-//         animationEnabled: true,
-//         theme: "light2",
-//         title: {
-//             text: "Weekly emotion check"
-//         },
-//         axisX: {
-//             valueFormatString: "DD MMM YYYY",
-//         },
-//         axisY: {
-//             title: "USD",
-//             titleFontSize: 2
-//         },
-//         data: [{
-//             type: "spline",
-//             yValueFormatString: "$#,###.##",
-//             dataPoints: dataPoints
-//         }]
-//     };
-    // addData();
-//     function addData() {
-//         for (var i = 0; i < info.length; i++) {
-//             dataPoints.push({
-//                 x: (info[i].date),
-//                 y: info[i].units
-//             });
-//         }
-//         $("#chartContainer").CanvasJSChart(options);
-//     }
-//     $.getJSON("https://canvasjs.com/data/gallery/jquery/daily-sales-data.json", addData);
-// }
-
-// var info = [
-//     {
-//         "date": 1,
-//         "units": 5
-//     },
-//     {
-//         "date": 2,
-//         "units": 2
-//     },
-//     {
-//         "date": 3,
-//         "units": 3
-//     },
-//     {
-//         "date": 4,
-//         "units": 4
-//     },
-//     {
-//         "date": 5,
-//         "units": 4
-//     },
-// ]
-
 window.onload = function () {
 
     var options = {
@@ -121,7 +59,7 @@ window.onload = function () {
                 enabled: true,
                 snapToDataPoint: true,
                 labelFormatter: function(e) {
-                    return "$" + CanvasJS.formatNumber(e.value, "##0.00");
+                    return "" + CanvasJS.formatNumber(e.value, "##0");
                 }
             }
         },
