@@ -44,7 +44,14 @@ body {
 }
 
 .play-button {
-    width:10%
+    width:150px;
+}
+.music {
+    width: 100px;
+}
+
+.music-con {
+    
 }
 
 .navbar-brand
@@ -59,6 +66,7 @@ body {
 .timer {
     font-size: 80px;
     color: rgb(83, 83, 114);
+    margin-left: 105px;
 }
 
 .modal-h1 {
