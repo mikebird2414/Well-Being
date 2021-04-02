@@ -4,6 +4,16 @@ var messageInput = document.querySelector("#message");
 var saveBtn = document.querySelector("#saveBtn");
 var quote = document.querySelector("#quote");
 
+
+var emoteSpot1 = document.querySelector("#dayOne");
+var emoteSpot2 = document.querySelector("#dayTwo");
+var emoteSpot3 = document.querySelector("#dayThree");
+var emoteSpot4 = document.querySelector("#dayFour");
+var emoteSpot4 = document.querySelector("#dayFive");
+var emoteSpot4 = document.querySelector("#daySix");
+var emoteSpot4 = document.querySelector("#daySeven");
+
+
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -85,3 +95,66 @@ window.onload = function () {
     }
     dailyEmotion = localStorage.getItem("04/01/2021");
     console.log(dailyEmotion);
+
+
+
+
+
+
+    var currentDay = new Date();
+    console.log(currentDay);
+
+    var currentDayD = currentDay.getDate();
+    console.log(currentDayD);
+
+    var currentDayM = currentDay.getMonth() + 1;
+    console.log(currentDayM)
+
+    var currrentDayY = currentDay.getFullYear();
+
+    var dayOne = "0" + currentDayM + "/" + "0" + currentDayD + "/" + currrentDayY;
+    console.log(dayOne);
+
+    dayOneEmotion = localStorage.getItem(dayOne);
+    console.log(dayOneEmotion);
+
+    emoteSpot1.innerHTML = dayOne + " " + dayOneEmotion;
+
+
+
+    var minusOne = new Date(currentDay);
+
+    minusOne.setDate(minusOne.getDate() - 1);
+
+    console.log(minusOne);
+
+
+
+    var minusTwo = new Date(minusOne);
+
+    minusTwo.setDate(minusTwo.getDate() -1);
+
+    console.log(minusTwo);
+
+
+    var minusThree = new Date(minusTwo);
+
+    minusThree.setDate(minusThree.getDate() -1);
+
+    console.log(minusThree);
+
+
+    var minusFour = new Date(minusThree);
+
+    minusFour.setDate(minusFour.getDate() -1);
+
+    console.log(minusFour);
+
+
+
+
+    
+
+
+
+    
