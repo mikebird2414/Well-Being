@@ -10,6 +10,15 @@ body {
 }
 
 
+
+#container {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
 .custom-header-font {
   color: white;
 }
