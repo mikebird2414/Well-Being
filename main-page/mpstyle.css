@@ -54,3 +54,10 @@ body {
   align-content: left;
 
 }
+
+.clear, .save {
+  background-color: rgb(228, 200, 238);
+  border-radius: 6px;
+  color: rgb(105, 104, 177);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
