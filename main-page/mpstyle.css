@@ -15,14 +15,26 @@ body {
 }
 
 /*How i'm feeling*/
-.quote {
+#quote {
   text-align: center;
+  margin: 30px;
+  font-family: 'Bad Script', cursive;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
 }
 
 .feelings {
   text-align: center;
-  color: aqua; /* change me!!! */ 
+  color: rgb(255, 255, 255); /* change me!!! */ 
   padding: 20px;
+}
+.feelings h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.feelings p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .message {
@@ -38,15 +50,7 @@ body {
   padding: 20px;
 }
 
-.quote-main {
-  text-align: center;
-  margin-bottom: 2%;
-}
-
-.center-items {
-  align-content: center;
-  margin-left: 10%;
-  margin-right: 10%;
-  
+.card-body-left {
+  align-content: left;
 
 }
