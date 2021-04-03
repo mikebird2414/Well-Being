@@ -4,6 +4,16 @@ var messageInput = document.querySelector("#message");
 var saveBtn = document.querySelector("#saveBtn");
 var quote = document.querySelector("#quote");
 
+
+var emoteSpot1 = document.querySelector("#dayOne");
+var emoteSpot2 = document.querySelector("#dayTwo");
+var emoteSpot3 = document.querySelector("#dayThree");
+var emoteSpot4 = document.querySelector("#dayFour");
+var emoteSpot4 = document.querySelector("#dayFive");
+var emoteSpot4 = document.querySelector("#daySix");
+var emoteSpot4 = document.querySelector("#daySeven");
+
+
 var today = new Date();
 var dd = String(today.getDate()).padStart(2, '0');
 var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
@@ -82,11 +92,57 @@ window.onload = function () {
     
     $("#chartContainer").CanvasJSChart(options);
     
-
+   
 
 
     }
-    // dailyEmotion = localStorage.getItem("04/01/2021");
-    // console.log(dailyEmotion);
+
+    const dateTime = moment().format("L");
+    var dateTimeCheck0 = moment().format("L");
+    var dateTimeCheck1 = moment().subtract(1, "days").format("L");
+    var dateTimeCheck2 = moment().subtract(2, "days").format("L");
+    var dateTimeCheck3 = moment().subtract(3, "days").format("L");
+    var dateTimeCheck4 = moment().subtract(4, "days").format("L");
+    dailyEmotionCheck0 = localStorage.getItem(dateTimeCheck0);
+    dailyEmotionCheck1 = localStorage.getItem(dateTimeCheck1);
+    dailyEmotionCheck2 = localStorage.getItem(dateTimeCheck2);
+    dailyEmotionCheck3 = localStorage.getItem(dateTimeCheck3);
+    dailyEmotionCheck4 = localStorage.getItem(dateTimeCheck4);
+    var date1 = moment().format('LL'); 
+    var date2 = moment().subtract(1, 'days').format('LL'); 
+    var sevenDays = [ dateTimeCheck0, dateTimeCheck1, dateTimeCheck2, dateTimeCheck3, dateTimeCheck4];
+    var sevenDayEmo = [ dailyEmotionCheck0, dailyEmotionCheck1, dailyEmotionCheck2, dailyEmotionCheck3, dailyEmotionCheck4];
+    var id = 0
+    
+
+    for (let i = 0; i < sevenDays.length; i++) {
 
 
+        if(sevenDayEmo[i] == null) {
+            console.log("end")
+    
+        }else {
+            $("#date" + i ).html("<h5>" + sevenDays[i]+ ": " +  sevenDayEmo[i] + "</h5>");
+            
+        }
+    }
+        
+
+   
+    
+ 
+    
+    
+ 
+
+
+
+
+
+
+
+    
+
+
+
+    
