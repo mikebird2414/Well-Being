@@ -1,17 +1,11 @@
 
+// Notebook = localStorage.getItem("today");
+
 var messageInput = document.querySelector("#message");
 var saveBtn = document.querySelector("#saveBtn");
 var quote = document.querySelector("#quote");
 var clearBtn = document.querySelector("#clear");
 
-
-var emoteSpot1 = document.querySelector("#dayOne");
-var emoteSpot2 = document.querySelector("#dayTwo");
-var emoteSpot3 = document.querySelector("#dayThree");
-var emoteSpot4 = document.querySelector("#dayFour");
-var emoteSpot4 = document.querySelector("#dayFive");
-var emoteSpot4 = document.querySelector("#daySix");
-var emoteSpot4 = document.querySelector("#daySeven");
 
 
 var today = new Date();
@@ -20,6 +14,7 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
 today = mm + '/' + dd;
+console.log(today)
 
 document.getElementById("message").value = localStorage.getItem(today);
 
@@ -56,96 +51,33 @@ fetch(quotesUrl)
   });
 
 
-    dailyEmotion = localStorage.getItem("04/01/2021");
-    console.log(dailyEmotion);
-
-
-
-
-
-
-    var currentDay = new Date();
-    console.log(currentDay);
-
-    var currentDayD = currentDay.getDate();
-    console.log(currentDayD);
-
-    var currentDayM = currentDay.getMonth() + 1;
-    console.log(currentDayM)
-
-    var currrentDayY = currentDay.getFullYear();
-
-    var dayOne = "0" + currentDayM + "/" + "0" + currentDayD + "/" + currrentDayY;
-    console.log(dayOne);
-
-    dayOneEmotion = localStorage.getItem(dayOne);
-    console.log(dayOneEmotion);
-
-    emoteSpot1.innerHTML = dayOne + " " + dayOneEmotion;
-
-
-
-    var minusOne = new Date(currentDay);
-
-    minusOne.setDate(minusOne.getDate() - 1);
-
-    console.log(minusOne);
-    
-    var minusOneD = minusOne.getDate();
-    console.log(minusOneD);
-
-    var minusOneM = minusOne.getMonth() + 1;
-    console.log(minusOneM);
-
-
-    var minusOneY = minusOne.getFullYear();
-
-    var dayTwo = "0" + minusOneM + "/" + "0" + minusOneD + "/" + minusOneY;
-    console.log(dayOne);
-
-    dayTwoEmotion = localStorage.getItem(dayTwo);
-    console.log(dayTwoEmotion);
-
-    emoteSpot2.innerHTML = dayTwo + " " + dayTwoEmotion;
-
-
+    const dateTime = moment().format("L");
+    var dateTimeCheck0 = moment().format("L");
+    var dateTimeCheck1 = moment().subtract(1, "days").format("L");
+    var dateTimeCheck2 = moment().subtract(2, "days").format("L");
+    var dateTimeCheck3 = moment().subtract(3, "days").format("L");
+    var dateTimeCheck4 = moment().subtract(4, "days").format("L");
+    dailyEmotionCheck0 = localStorage.getItem(dateTimeCheck0);
+    dailyEmotionCheck1 = localStorage.getItem(dateTimeCheck1);
+    dailyEmotionCheck2 = localStorage.getItem(dateTimeCheck2);
+    dailyEmotionCheck3 = localStorage.getItem(dateTimeCheck3);
+    dailyEmotionCheck4 = localStorage.getItem(dateTimeCheck4);
+    var date1 = moment().format('LL'); 
+    var date2 = moment().subtract(1, 'days').format('LL'); 
+    var sevenDays = [ dateTimeCheck0, dateTimeCheck1, dateTimeCheck2, dateTimeCheck3, dateTimeCheck4];
+    var sevenDayEmo = [ dailyEmotionCheck0, dailyEmotionCheck1, dailyEmotionCheck2, dailyEmotionCheck3, dailyEmotionCheck4];
+    var id = 0
     
 
+    for (let i = 0; i < sevenDays.length; i++) {
 
 
-    var minusTwo = new Date(minusOne);
-
-    minusTwo.setDate(minusTwo.getDate() -1);
-
-    console.log(minusTwo);
-
-
-    var minusThree = new Date(minusTwo);
-
-    minusThree.setDate(minusThree.getDate() -1);
-
-    console.log(minusThree);
-
-
-    var minusFour = new Date(minusThree);
-
-    minusFour.setDate(minusFour.getDate() -1);
-
-    console.log(minusFour);
-
-// var number = localStorage.getItem(dayOne)
-
-    let sevenDays = [
-        {
-          "date": number = localStorage.getItem(dayOne),
-          "emotion": 2,
-        },
-        {
-            "date": 1,
-            "emotion": 2,
+        if(sevenDayEmo[i] == null) {
+            console.log("end")
+    
+        }else {
+            $("#date" + i ).html("<h5>" + sevenDays[i]+ ": " +  sevenDayEmo[i] + "</h5>");
+            
+        }
+    }
         
-        },
-
-
-    ]
-    console.log(sevenDays);
