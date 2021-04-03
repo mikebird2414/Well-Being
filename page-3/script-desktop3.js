@@ -10,10 +10,6 @@ var yoga6 = document.querySelector("#yoga6");
 
 
 
-// var timers = document.querySelectorAll(".timer");
-// var secondsLeft = 30;
-
-
 var quote = document.querySelector("#quote")
 var playBtn = document.querySelector("#play");
 var playBtn2 = document.querySelector("#pause");
@@ -50,18 +46,6 @@ function clickedFive() {
   startTimerFive();
 }
 
-// function startTimer() {
-    
-//   var timer = setInterval(function() {
-//   secondsLeft--;
-//   timers[0].textContent = secondsLeft;
-//   if (secondsLeft === 0) {
-//       clearInterval(timer);
-//   };
-
-// }, 1000);
-
-// }
 
 function startTimer() {
   var timers = document.querySelectorAll(".timer");
@@ -172,123 +156,6 @@ fetch(quotesUrl)
   
 
   });
-
-  // type="text/javascript">
-  //       window.onload = function () {
-  //           var chart = new CanvasJS.Chart("chartContainer",{
-  //               title:{
-  //                   text: "Line Chart with Logarithmic X Axis"
-  //               },
-  //               axisX:{
-  //                   title: "Logarithmic Axis",
-  //                     logarithmic: true
-  //               },
-  //               data: [{
-  //                   type: "line",
-  //                   dataPoints: [
-  //                       { x: 1, y: 71 },
-  //                       { x: 2, y: 55 },
-  //                       { x: 3, y: 50 },
-  //                       { x: 4, y: 65 },
-  //                       { x: 5, y: 95 },
-  //                       { x: 6, y: 68 },
-  //                       { x: 7, y: 28 },
-  //                       { x: 8, y: 34 },
-  //                       { x: 9, y: 14 }
-  //                      ]
-  //               }]
-  //           });
-  //           chart.render();
-  //       }
-  
-        // playBtn.addEventListener("click", playMusic);
-
-        // function playMusic() {
-        //   src="https://www.zenradio.com/zen" autostart="true"
-        //   fetch()
-        // }
-
-        // var unirest = require("unirest");
-
-
-// function playMusic() {
-//   console.log("i was clicked");
-//   const settings = {
-//     "async": true,
-//     "crossDomain": true,
-//     "url": "https://musicapp8.p.rapidapi.com/?q=test",
-//     "method": "GET",
-//     "headers": {
-//       "x-rapidapi-key": "6098ddedcfmshee6bd61bb3fb3efp19e14djsn2cc983ee2171",
-//       "x-rapidapi-host": "musicapp8.p.rapidapi.com"
-//     }
-//   };
-  
-//   $.ajax(settings).done(function (response) {
-//     console.log(response);
-//   });
-// }
-
-// window.onload = function() {
-        
-//   var dataPoints = [];
-  
-//   var options =  {
-//       animationEnabled: true,
-//       theme: "light2",
-//       title: {
-//           text: "Daily Sales Data"
-//       },
-//       axisX: {
-//           valueFormatString: "DD MMM YYYY",
-//       },
-//       axisY: {
-//           title: "USD",
-//           titleFontSize: 24
-//       },
-//       data: [{
-//           type: "spline", 
-//           yValueFormatString: "$#,###.##",
-//           dataPoints: dataPoints
-//       }]
-//   };
-  
-//   function addData() {
-//       for (var i = 0; i < info.length; i++) {
-//           dataPoints.push({
-//               x: new Date(info[i].date),
-//               y: info[i].units
-//           });
-//       }
-//       $("#chartContainer").CanvasJSChart(options);
-  
-//   }
-//   $.getJSON("https://canvasjs.com/data/gallery/jquery/daily-sales-data.json", addData);
-  
-//   }
-
-// var info = [
-//   {
-//      "date":1617155500000,
-//      "units":1
-//   },
-//   {
-//      "date":12,
-//      "units":2
-//   },
-//   {
-//      "date":123,
-//      "units":3
-//   },
-//   {
-//      "date":(1617155500003 + 259200),
-//      "units":4
-//   },
-//   {
-//      "date":1617155500004,
-//      "units":4
-//   },
-// ];
 
     // 2. This code loads the IFrame Player API code asynchronously.
     
