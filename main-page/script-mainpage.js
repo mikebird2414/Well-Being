@@ -1,17 +1,11 @@
 document.getElementById("message").innerHTML = localStorage.getItem("today");
 
+// Notebook = localStorage.getItem("today");
+
 var messageInput = document.querySelector("#message");
 var saveBtn = document.querySelector("#saveBtn");
 var quote = document.querySelector("#quote");
 
-
-var emoteSpot1 = document.querySelector("#dayOne");
-var emoteSpot2 = document.querySelector("#dayTwo");
-var emoteSpot3 = document.querySelector("#dayThree");
-var emoteSpot4 = document.querySelector("#dayFour");
-var emoteSpot4 = document.querySelector("#dayFive");
-var emoteSpot4 = document.querySelector("#daySix");
-var emoteSpot4 = document.querySelector("#daySeven");
 
 
 var today = new Date();
@@ -20,8 +14,8 @@ var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
 var yyyy = today.getFullYear();
 
 today = mm + '/' + dd;
+console.log(today)
 
-console.log(today);
 
 saveBtn.addEventListener("click", setDailyStorage);
 
@@ -48,54 +42,6 @@ fetch(quotesUrl)
 
   });
 
-window.onload = function () {
-
-    var options = {
-        animationEnabled: true,
-        title:{
-            text: "Weekly Emotional Range"
-        },
-        axisX:{
-            valueFormatString: "DD MMM YYYY",
-            crosshair: {
-                enabled: true,
-                snapToDataPoint: true
-            }
-        },
-        axisY: {
-            title: "Emotion Range",
-            valueFormatString: "0",
-            crosshair: {
-                enabled: true,
-                snapToDataPoint: true,
-                labelFormatter: function(e) {
-                    return "" + CanvasJS.formatNumber(e.value, "##0");
-                }
-            }
-        },
-        data: [{
-            type: "area",
-            xValueFormatString: "DD MMM YYYY",
-            yValueFormatString: "0",
-            dataPoints: [
-                { x: new Date(2021, 03, 01), y: 4 },
-                { x: new Date(2021, 03, 04), y: 5 },
-                { x: new Date(2021, 03, 05), y: 3 },
-                { x: new Date(2021, 03, 06), y: 4 },
-                { x: new Date(2021, 03, 07), y: 5},
-                { x: new Date(2021, 03, 08), y: 5 },
-                { x: new Date(2021, 03, 09), y: 2 },
-
-            ]
-        }]
-    };
-    
-    $("#chartContainer").CanvasJSChart(options);
-    
-   
-
-
-    }
 
     const dateTime = moment().format("L");
     var dateTimeCheck0 = moment().format("L");
@@ -127,22 +73,3 @@ window.onload = function () {
         }
     }
         
-
-   
-    
- 
-    
-    
- 
-
-
-
-
-
-
-
-    
-
-
-
-    
