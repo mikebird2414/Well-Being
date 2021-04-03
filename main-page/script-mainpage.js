@@ -1,8 +1,8 @@
-document.getElementById("message").innerHTML = localStorage.getItem("today");
 
 var messageInput = document.querySelector("#message");
 var saveBtn = document.querySelector("#saveBtn");
 var quote = document.querySelector("#quote");
+var clearBtn = document.querySelector("#clear");
 
 
 var emoteSpot1 = document.querySelector("#dayOne");
@@ -21,13 +21,20 @@ var yyyy = today.getFullYear();
 
 today = mm + '/' + dd;
 
+document.getElementById("message").value = localStorage.getItem(today);
+
 console.log(today);
 
 saveBtn.addEventListener("click", setDailyStorage);
+clearBtn.addEventListener("click", clearMessage)
 
 function setDailyStorage() {
     var dailyDiary = messageInput.value;
 localStorage.setItem(today, dailyDiary);
+}
+
+function clearMessage() {
+    messageInput.value = "";
 }
 
 
@@ -48,51 +55,7 @@ fetch(quotesUrl)
 
   });
 
-window.onload = function () {
 
-    var options = {
-        animationEnabled: true,
-        title:{
-            text: "Weekly Emotional Range"
-        },
-        axisX:{
-            valueFormatString: "DD MMM YYYY",
-            crosshair: {
-                enabled: true,
-                snapToDataPoint: true
-            }
-        },
-        axisY: {
-            title: "Emotion Range",
-            valueFormatString: "0",
-            crosshair: {
-                enabled: true,
-                snapToDataPoint: true,
-                labelFormatter: function(e) {
-                    return "" + CanvasJS.formatNumber(e.value, "##0");
-                }
-            }
-        },
-        data: [{
-            type: "area",
-            xValueFormatString: "DD MMM YYYY",
-            yValueFormatString: "0",
-            dataPoints: [
-                { x: new Date(2021, 03, 01), y: 4 },
-                { x: new Date(2021, 03, 04), y: 5 },
-                { x: new Date(2021, 03, 05), y: 3 },
-                { x: new Date(2021, 03, 06), y: 4 },
-                { x: new Date(2021, 03, 07), y: 5},
-                { x: new Date(2021, 03, 08), y: 5 },
-                { x: new Date(2021, 03, 09), y: 2 },
-
-            ]
-        }]
-    };
-    
-    $("#chartContainer").CanvasJSChart(options);
-    
-    }
     dailyEmotion = localStorage.getItem("04/01/2021");
     console.log(dailyEmotion);
 
@@ -170,11 +133,19 @@ window.onload = function () {
 
     console.log(minusFour);
 
+// var number = localStorage.getItem(dayOne)
+
+    let sevenDays = [
+        {
+          "date": number = localStorage.getItem(dayOne),
+          "emotion": 2,
+        },
+        {
+            "date": 1,
+            "emotion": 2,
+        
+        },
 
 
-
-    
-
-
-
-    
+    ]
+    console.log(sevenDays);
