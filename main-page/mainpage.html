@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Mental</title>
 
-    <link rel="stylesheet" href="/main-page/mpstyle.css">
+    <link rel="stylesheet" href="./mpstyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -19,26 +21,37 @@
     <!-- Navigation Menu -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index1.html"><img src="/Images1/MyMental.png" class="card-img-top" alt="My Mental Logo"></a>
+            <a class="navbar-brand" href="../index.html"><img src="../Images1/MyMental.png"card-img-top" alt="My Mental Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="mainpage.html">Home</a>
-                    <a class="nav-link" href="/page-3/index-desktop3.html">Yoga Poses</a>
+                    <a class="nav-link active" aria-current="page" href="../main-page/mainpage.html">Home</a>
+                    <a class="nav-link" href="../page-3/index-desktop3.html">Yoga Poses</a>
                 </div>
             </div>
         </div>
     </nav>
 
-    <h1 id="quote"></h1>
-
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <div id="chartContainer" class="chartContainer" style="height: 400px; width: 100%;"></div>
+                <div>
+                    <h1 id="quote"></h1>
+                </div>
+                <div>
+                    <ul class="list-group">
+                        <li id="dayOne" class="list-group-item">Current Day</li>
+                        <li id="dayTwo" class="list-group-item">Yesterday</li>
+                        <li id="dayThree" class="list-group-item">Two days Ago</li>
+                        <li id="dayFour" class="list-group-item">Three days Ago</li>
+                        <li id="dayFive" class="list-group-item">Four days Ago</li>
+                        <li id="daySix" class="list-group-item">Five days Ago</li>
+                        <li id="daySeven" class="list-group-item">Six days Ago</li>
+                      </ul>
+                </div>
             </div>
         </div>
 
@@ -47,11 +60,11 @@
         <div class="row">
             <div class="col-sm">
                 <div class="feelings">
-                    <h3>Today I am Feeling</h3>
+                    <h2>Daily Diary: Today I am Feeling</h2>
                     <img src="" alt="" />
                     <p>
-                        Today i am feeling very well balnaced and rested. For today my focus is to continue to relax, clear my
-                        mind, and continue the ever lasting flow of positive chackra.
+                        EX) Today I am feeling well balanced and rested. For today, my focus is to continue to relax, clear my
+                        mind, and continue the ever lasting flow of positive chakra.
                     </p>
                     <textarea id="message" class="message" rows="8" cols="50" placeholder="Tell Us How You're Feeling Today..."></textarea>
                     <br>
