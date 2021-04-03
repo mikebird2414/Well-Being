@@ -37,3 +37,8 @@ body {
   text-align: center;
   padding: 20px;
 }
+
+.card-body-left {
+  align-content: left;
+
+}
