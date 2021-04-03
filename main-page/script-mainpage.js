@@ -127,6 +127,26 @@ window.onload = function () {
     minusOne.setDate(minusOne.getDate() - 1);
 
     console.log(minusOne);
+    
+    var minusOneD = minusOne.getDate();
+    console.log(minusOneD);
+
+    var minusOneM = minusOne.getMonth() + 1;
+    console.log(minusOneM);
+
+
+    var minusOneY = minusOne.getFullYear();
+
+    var dayTwo = "0" + minusOneM + "/" + "0" + minusOneD + "/" + minusOneY;
+    console.log(dayOne);
+
+    dayTwoEmotion = localStorage.getItem(dayTwo);
+    console.log(dayTwoEmotion);
+
+    emoteSpot2.innerHTML = dayTwo + " " + dayTwoEmotion;
+
+
+    
 
 
 
